@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+
+{%block content %}
+<div>
+  <form action=""  method="post">
+    {% csrf_token %}
+
+    <label for="username">Username:</label>
+    <input type="text" value="username" name="username" placeholder="Enter Username"/>
+
+    <label for="password">Password:</label>
+    <input type="password" value="password" name="password" placeholder="Enter Username"/>
+
+    <input type="submit" value="Login"/>
+  </form>
+</div>
+
+{%for msg in messages %}
+<div>{{msg}}</div>
+{% endfor %}
+
+<!--  {% if messages %}-->
+<!--  <ul class="messages" style="list-style: none">-->
+<!--    {% for message in messages %}-->
+<!--    <li {% if message.tags %} class="{{ message.tags }}"{% endif %} >{{ message }}</li>-->
+<!--    {% endfor %}-->
+<!--  </ul>-->
+<!--  {% endif %}-->
+
+{% endblock %}
