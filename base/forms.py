@@ -20,3 +20,7 @@ class UserUpdateForm(ModelForm):
   class Meta:
     model = User
     fields = ['username', 'email','bio', 'avatar', 'email']
+
+
+class Yangi(ModelForm):
+  pass
