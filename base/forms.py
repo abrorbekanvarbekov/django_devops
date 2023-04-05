@@ -21,6 +21,3 @@ class UserUpdateForm(ModelForm):
     model = User
     fields = ['username', 'email','bio', 'avatar', 'email']
 
-
-class Yangi(ModelForm):
-  pass
