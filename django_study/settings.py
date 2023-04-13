@@ -123,33 +123,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-# STATIC_URL = '/static/'
-#
-# # STATIC_DIR=os.path.join(BASE_DIR,'static')
-#
-# STATICFILES_DIRS = (
-#     os.path.join(BASE_DIR, 'static'),
-# )
-#
-# # STATIC_ROOT=os.path.join(BASE_DIR,'.static')
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+# STATIC_ROOT = BASE_DIR / 'static'
 #
 # ######################################################
-MEDIA_URL = '/images/'
-#
-MEDIA_ROOT = BASE_DIR / 'static/images'
-#
+# MEDIA_URL = '/images/'
+# #
+# MEDIA_ROOT = BASE_DIR / 'static/images'
+# #
 # # Default primary key field type
 # # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 #
 # DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-# CORS_ALLOW_ALL_ORIGINS = True
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ROOT_DIR = os.path.dirname(BASE_DIR)
+CORS_ALLOW_ALL_ORIGINS = True
 
-# static files
-STATIC_URL = '/static/'
-STATIC_DIR = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS = [
-    STATIC_DIR,
-]
-STATIC_ROOT = os.path.join(ROOT_DIR, '.static_root')
