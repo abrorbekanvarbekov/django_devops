@@ -92,7 +92,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'HOST': '18.183.88.241',
-        'NAME': 'abror-db',
+        'NAME': 'django_devops',
         'USER': 'root',
         'PASSWORD': 'password',
         'PORT': '3306',
